@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>work</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <style>
+            * { margin : 0; padding : 0; font-size : 10px;}
+            html, body {
+                width : 100%;
+                height : 100%;
+            }
+            nav {
+                position : relative; top : 25%; transform : skew(0,-10deg);
+            }
+            .box_all {
+                list-style: none;  position : absolute; left : 50%;
+            }
+
+            .box_1,.box_2,.box_3 {
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size : 2rem;
+                line-height : 4.8rem;
+                text-align: center;
+
+            }
+            .box_2 {
+                width : 35rem;
+                height : 5rem;
+                background-color : lightgray;
+            }
+            .box_1 {
+                width : 35rem;
+                height : 4rem;
+                background-color : darkgray;
+                transform : skew(45deg);
+                margin-left : -2rem;
+            }
+            .box_3 {
+                width : 4rem;
+                height : 5rem;
+                background-color : gray;
+                transform : skew(0,45deg);
+                position : absolute;
+                margin-left : -4rem;
+                margin-top : -7rem;
+            }
+            .box_all_1 {
+                top : 5rem; z-index : 600; transition : 0.3s;
+            }
+            .box_all_2 {
+                top : 10rem; z-index : 500; transition : 0.3s;
+            }
+            .box_all_3 {
+                top : 15rem; z-index : 400; transition : 0.3s;
+            }
+            .box_all_4 {
+                top : 20rem; z-index : 300; transition : 0.3s;
+            }
+            .box_all_5 {
+                top : 25rem; z-index : 200; transition : 0.3s;
+            }
+            .box_all_6 {
+                top : 30rem; z-index : 100; transition : 0.3s;
+            }
+
+            .box_all_6 li:first-child {
+                box-shadow : -9rem 12rem 5rem -1rem;
+            }
+
+            .box_all:hover {
+               cursor : pointer;  margin-left : -10rem; transition : all 0.3s linear; color : white;
+            }
+            .box_all:hover li:nth-child(2) {
+                background-color : #0EC6F8;
+            }
+            .box_all:hover li:nth-child(1) {
+                background-color : #06AFDD;
+            }
+            .box_all:hover li:nth-child(3) {
+                background-color : #028BB0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="box_all box_all_1">
+                <li class="box_1"></li>
+                <li class="box_2">HOW</li>
+                <li class="box_3"></li>
+            </ul>
+            <ul class="box_all box_all_2">
+                <li class="box_1"></li>
+                <li class="box_2">ABOUT</li>
+                <li class="box_3"></li>
+            </ul>
+            <ul class="box_all box_all_3">
+                <li class="box_1"></li>
+                <li class="box_2">SERVICE</li>
+                <li class="box_3"></li>
+            </ul>
+            <ul class="box_all box_all_4">
+                <li class="box_1"></li>
+                <li class="box_2">MARKETING</li>
+                <li class="box_3"></li>
+            </ul>
+            <ul class="box_all box_all_5">
+                <li class="box_1"></li>
+                <li class="box_2">IMFORMATION</li>
+                <li class="box_3"></li>
+            </ul>
+            <ul class="box_all box_all_6">
+                <li class="box_1"></li>
+                <li class="box_2">CONTACT</li>
+                <li class="box_3"></li>
+            </ul>
+        </nav>
+    </body>
+</html>
